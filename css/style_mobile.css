@@ -300,6 +300,7 @@
 #breadcrumb > span:last-child {color: #000;}
 
 .sub_content {padding: 80px 0 150px;}
+.sub_content > .txt_tit {line-height: 42px; margin-bottom: 97px; font-size: 30px; text-align: center;}
 
 @media screen and (max-width: 1024px) {
   .sub_visual .bg_frame_light {width: 96%;}
@@ -311,6 +312,7 @@
   #breadcrumb > span:last-child {color: #fff;}
 
   .sub_content.inner {padding: 80px 30px 150px;}
+  .sub_content > .txt_tit {padding: 0 30px};
 }
 
 @media screen and (max-width: 768px) {
@@ -322,11 +324,33 @@
   #breadcrumb > * {font-size: 10px;}
 
   .sub_content {padding: 40px 0 60px;} 
-  .sub_content.inner {padding: 40px 15px 60px;} 
+  .sub_content.inner {padding: 40px 15px 60px;}
+  .sub_content > .txt_tit {line-height: 23px; margin-bottom: 40px; padding: 0 15px; font-size: 16px;}
+  .sub_content > .txt_tit > br {display: none;}
 }
 
 /* sub about contact */
 .about .sub_visual {background-image: url(../img/sub/bg_visual_about.jpg);}
+
+.contact .map_area {width: 100%; height: 420px; background-color: skyblue;}
+.contact .contact_list {overflow: hidden;}
+.contact .contact_list li {height: 119px; margin-top: 70px; padding-left: 85px; background-repeat: no-repeat; background-position: left top; box-sizing: border-box;}
+.contact .contact_list li:nth-child(1) {height: 153px; border-bottom: 1px solid #f2f2f2; background-image: url(../img/sub/ico_contact_1.png);}
+.contact .contact_list li:nth-child(2) {float: left; width: 50%; background-image: url(../img/sub/ico_contact_2.png);}
+.contact .contact_list li:nth-child(3) {float: right; width: 50%; background-image: url(../img/sub/ico_contact_3.png);}
+.contact .contact_list li em {display: block; line-height: 1.4; margin-bottom: 10px; font-size: 30px;}
+.contact .contact_list li em + span {color: #666;}
+.contact .contact_list li em + span a {color: #1e5e87;}
+
+@media screen and (max-width: 768px) {
+  .contact .map_area {height: 180px;}
+  .contact .contact_list li {background-color: red; height: 57px; margin-top: 35px; padding-left: 70px;}
+  .contact .contact_list li:nth-child(1) {height: 93px;background-image: url(../img/sub/ico_contact_1.png);}
+  .contact .contact_list li:nth-child(2) {float: none; width: 100%; background-image: url(../img/sub/ico_contact_2.png);}
+  .contact .contact_list li:nth-child(3) {float: none; width: 100%; background-image: url(../img/sub/ico_contact_3.png);}
+  .contact .contact_list li em {font-size: 18px;}
+  .contact .contact_list li em + span {font-size: 14px;}
+}
 
 /* sub newsroom notice */
 .newsroom .sub_visual {background-image: url(../img/sub/bg_visual_newsroom.jpg);}
