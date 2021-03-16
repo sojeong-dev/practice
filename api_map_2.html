@@ -11,7 +11,6 @@
   <link rel="stylesheet" type="text/css" href="css/style_mobile.css" media="screen and (max-width: 1280px)" />
 
   <script src="js/jquery-1.8.3.min.js"></script>
-  <script src="js/script_ui.js"></script>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6ab23b168e18faed7ca921bc97b5cc29"></script>
 </head>
 <body class="sub about contact">
@@ -171,13 +170,13 @@
     var map = new kakao.maps.Map(container, options);
     
     //마커가 표시될 위치
-    // var markerPosition  = new kakao.maps.LatLng(37.59073142739662, 126.89592232231665); 
+    var markerPosition  = new kakao.maps.LatLng(37.59073142739662, 126.89592232231665); 
 
     //마커 생성
-    // var marker = new kakao.maps.Marker({position: markerPosition});
+    var marker = new kakao.maps.Marker({position: markerPosition});
 
     // 마커가 지도 위에 표시되도록 설정
-    // marker.setMap(map);
+    marker.setMap(map);
     // marker.setMap(null);  //마커 제거 코드
 
   </script>
